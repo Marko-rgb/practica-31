@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>p31</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+    <form>
+        Nombre:
+        <input type="text" id="Nombre"><br>
+        ingrese una clave:
+        <input type="password" id="clave" onBlur="alerta(this)"><br>
+        <input type="button" value="enviar">
+      </form>
+
+      <script>
+        function alerta(control)
+        {
+          if (control.value.length<7 || control.value.length>20)
+          {
+            alert('su clave debe tener menos de 7 digitos o mas de 20');
+          }
+        }
+    </script>
+    
+</body>
+</html>
